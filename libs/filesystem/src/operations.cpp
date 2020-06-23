@@ -1541,6 +1541,7 @@ namespace detail
 #   if defined(AT_FDCWD) && defined(AT_SYMLINK_NOFOLLOW) \
       && !(defined(__SUNPRO_CC) || defined(__sun) || defined(sun)) \
       && !(defined(linux) || defined(__linux) || defined(__linux__)) \
+      && !(defined(__QNX__) || defined(__QNXNTO__)) \
       && !(defined(__MAC_OS_X_VERSION_MIN_REQUIRED) \
            && __MAC_OS_X_VERSION_MIN_REQUIRED < 101000) \
       && !(defined(__IPHONE_OS_VERSION_MIN_REQUIRED) \
